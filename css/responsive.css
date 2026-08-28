@@ -355,3 +355,65 @@
     padding: 16px;
   }
 }
+/* =========================
+   HOW IT WORKS
+========================= */
+
+@media (max-width: 900px) {
+
+  .process__steps {
+    grid-template-columns: 1fr;
+
+    margin-top: 44px;
+
+    border-bottom: 0;
+  }
+
+  .process-step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+
+    min-height: 0;
+    padding: 26px 0;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .process-step:first-child {
+    border-left: 0;
+  }
+
+  .process-step__content {
+    margin-top: 0;
+  }
+
+  .process__note {
+    margin-top: 32px;
+  }
+}
+/* =========================
+   WHY BORNEO
+========================= */
+
+@media (max-width: 768px) {
+
+  .why-borneo__grid {
+    grid-template-columns: 1fr;
+    margin-top: 42px;
+  }
+
+  .why-card {
+    min-height: 0;
+    padding: 28px 24px;
+  }
+
+  .why-card h3 {
+    margin-top: 34px;
+  }
+
+  .why-borneo__signature {
+    margin-top: 40px;
+  }
+}

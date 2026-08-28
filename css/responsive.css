@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 20px;
+  }
+
+  .section {
+    padding-block: var(--section-space-mobile);
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .section-copy {
+    font-size: 1rem;
+  }
+
+  .btn {
+    min-height: 48px;
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+  /* =========================
+     COLORS
+  ========================= */
+
+  --color-bg: #0d0d0d;
+  --color-bg-soft: #131313;
+  --color-surface: #171717;
+  --color-surface-hover: #1c1c1c;
+
+  --color-text: #f4f1ea;
+  --color-text-soft: #c4beb4;
+  --color-text-muted: #8f8a82;
+
+  --color-gold: #c6a66a;
+  --color-gold-light: #dbc28d;
+  --color-gold-dark: #8f7447;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-gold: rgba(198, 166, 106, 0.32);
+
+  --color-overlay: rgba(0, 0, 0, 0.62);
+
+  /* =========================
+     TYPOGRAPHY
+  ========================= */
+
+  --font-primary: "Inter", Arial, sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 3rem;
+  --font-size-3xl: 4.5rem;
+
+  --line-height-tight: 1.08;
+  --line-height-normal: 1.6;
+
+  /* =========================
+     LAYOUT
+  ========================= */
+
+  --container-width: 1200px;
+  --container-padding: 24px;
+
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+
+  /* =========================
+     RADIUS
+  ========================= */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* =========================
+     TRANSITIONS
+  ========================= */
+
+  --transition-fast: 180ms ease;
+  --transition-base: 320ms ease;
+  --transition-slow: 500ms ease;
+
+  /* =========================
+     EFFECTS
+  ========================= */
+
+  --shadow-soft: 0 18px 60px rgba(0, 0, 0, 0.28);
+  --shadow-gold: 0 0 50px rgba(198, 166, 106, 0.08);
+
+  /* =========================
+     Z-INDEX
+  ========================= */
+
+  --z-navbar: 100;
+  --z-modal: 500;
+  --z-toast: 1000;
+}

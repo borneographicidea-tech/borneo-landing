@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Borneo Graphicidea — Logo & Brand Identity Design Studio</title>
+
+  <meta
+    name="description"
+    content="Borneo Graphicidea membantu UMKM hingga perusahaan membangun logo dan brand identity yang profesional, relevan, dan meyakinkan."
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+
+      <a href="#hero" class="navbar__brand" aria-label="Borneo Graphicidea">
+        <img
+          src="assets/images/brand/logo-borneo-main.png"
+          alt="Borneo Graphicidea"
+          class="navbar__logo"
+        />
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navigasi utama">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#how-it-works">Cara Kerja</a>
+        <a href="#why-borneo">Tentang</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <button class="btn btn--primary navbar__cta" type="button" data-start-project>
+        Mulai Project
+      </button>
+
+      <button
+        class="navbar__toggle"
+        type="button"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <div class="navbar__mobile" id="mobile-menu">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#how-it-works">Cara Kerja</a>
+      <a href="#why-borneo">Tentang</a>
+      <a href="#faq">FAQ</a>
+
+      <button class="btn btn--primary" type="button" data-start-project>
+        Mulai Project
+      </button>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+
+          <span class="eyebrow">
+            Design Studio · Logo & Brand Identity
+          </span>
+
+          <h1 class="hero__title">
+            Bisnismu sudah
+            <span class="text-gold">serius.</span>
+            Jangan biarkan tampilannya terlihat
+            <span class="text-gold">biasa.</span>
+          </h1>
+
+          <p class="hero__copy">
+            Kami membantu UMKM hingga perusahaan membangun identitas visual
+            yang terlihat profesional, relevan dengan bisnisnya, dan lebih
+            meyakinkan sejak pandangan pertama.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--primary">
+              Lihat Portfolio ↓
+            </a>
+
+            <a href="#how-it-works" class="btn btn--secondary">
+              Cara Kerja
+            </a>
+          </div>
+
+          <div class="hero__trust" aria-label="Keunggulan layanan">
+            <span>Konsep Original</span>
+            <span>Sesuai Karakter Bisnis</span>
+            <span>File Siap Digunakan</span>
+          </div>
+
+        </div>
+
+        <div class="hero__visual">
+          <img
+            src="assets/images/hero/borneo-hero.png"
+            alt="Borneo Graphicidea branding showcase"
+          />
+        </div>
+
+      </div>
+
+      <div class="hero__wordmark" aria-hidden="true">
+        BORNEO
+      </div>
+    </section>
+
+
+    <!-- =========================
+         FIRST IMPRESSION
+    ========================== -->
+    <section class="section first-impression">
+      <div class="container">
+
+        <span class="eyebrow">First Impression</span>
+
+        <h2 class="section-title">
+          Yang dilihat lebih dulu,
+          <span class="text-gold">membentuk kesan lebih dulu.</span>
+        </h2>
+
+        <div class="first-impression__copy">
+          <p>
+            Calon pelanggan belum tahu kualitas produkmu.
+          </p>
+
+          <p>
+            Belum tahu pelayananmu. Belum tahu seberapa serius kamu
+            menjalankan bisnis.
+          </p>
+
+          <p>
+            <strong>Tapi mereka sudah melihat brand-mu.</strong>
+          </p>
+        </div>
+
+        <div class="first-impression__values">
+          <span>Terlihat Profesional</span>
+          <span>Mudah Dikenali</span>
+          <span>Punya Karakter</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+    <section class="section section--soft portfolio" id="portfolio">
+      <div class="container">
+
+        <div class="portfolio__header">
+          <span class="eyebrow">Selected Work</span>
+
+          <h2 class="section-title">
+            Setiap bisnis punya karakter yang berbeda.
+            <span class="text-gold">
+              Desainnya juga seharusnya begitu.
+            </span>
+          </h2>
+        </div>
+
+        <div class="portfolio__filters" role="group" aria-label="Filter portfolio">
+          <button type="button" class="is-active" data-filter="all">
+            Semua
+          </button>
+
+          <button type="button" data-filter="fnb">
+            F&amp;B
+          </button>
+
+          <button type="button" data-filter="umkm">
+            UMKM
+          </button>
+
+          <button type="button" data-filter="perusahaan">
+            Perusahaan
+          </button>
+
+          <button type="button" data-filter="umum">
+            Umum
+          </button>
+        </div>
+
+        <div
+          class="portfolio__grid"
+          id="portfolio-grid"
+          aria-live="polite"
+        >
+          <!-- Portfolio dirender dari portfolio.json -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PRICING
+    ========================== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+
+        <span class="eyebrow">Design Packages</span>
+
+        <h2 class="section-title">
+          Pilih kebutuhan desain yang
+          <span class="text-gold">paling sesuai dengan bisnismu.</span>
+        </h2>
+
+        <p class="section-copy">
+          Setiap paket dirancang dengan kedalaman proses yang berbeda,
+          agar kamu bisa memilih sesuai tahap dan kebutuhan bisnis.
+        </p>
+
+        <div class="pricing__grid" id="pricing-grid">
+          <!-- Paket dirender dari pricing.json -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         BRIEF
+    ========================== -->
+    <section class="section section--soft brief" id="brief">
+      <div class="container">
+
+        <div class="brief__header">
+          <span class="eyebrow">Project Brief</span>
+
+          <h2 class="section-title">
+            Ceritakan sedikit tentang
+            <span class="text-gold">bisnismu.</span>
+          </h2>
+
+          <p class="section-copy">
+            Nggak perlu paham istilah desain. Isi brief singkat ini agar
+            kami bisa memahami arah dan kebutuhan project-mu.
+          </p>
+        </div>
+
+        <form class="brief__form" id="brief-form">
+
+          <div class="brief__summary" id="brief-summary">
+            <!-- Referensi portfolio & paket aktif -->
+          </div>
+
+          <div class="form-group">
+            <label for="business-name">Nama Logo / Bisnis *</label>
+            <input
+              type="text"
+              id="business-name"
+              name="businessName"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="business-field">Bidang Usaha *</label>
+            <input
+              type="text"
+              id="business-field"
+              name="businessField"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="city">Kota Asal *</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+            />
+          </div>
+
+          <fieldset class="form-group">
+            <legend>Konsep Logo *</legend>
+
+            <div class="concept-options">
+              <label>
+                <input type="checkbox" name="concept" value="Minimalis" />
+                <span>Minimalis</span>
+              </label>
+
+              <label>
+                <input type="checkbox" name="concept" value="Modern" />
+                <span>Modern</span>
+              </label>
+
+              <label>
+                <input type="checkbox" name="concept" value="Initial" />
+                <span>Initial</span>
+              </label>
+
+              <label>
+                <input type="checkbox" name="concept" value="Badge" />
+                <span>Badge</span>
+              </label>
+
+              <label>
+                <input type="checkbox" name="concept" value="Emblem" />
+                <span>Emblem</span>
+              </label>
+
+              <label>
+                <input type="checkbox" name="concept" value="Maskot" />
+                <span>Maskot</span>
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  name="concept"
+                  value="Bebas Rekomendasi Designer"
+                />
+                <span>Bebas Rekomendasi Designer</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="logo-color">Warna Dominan Logo *</label>
+            <input
+              type="text"
+              id="logo-color"
+              name="logoColor"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="background-color">
+              Warna Dominan Background / Kemasan
+              <span class="text-muted">(opsional)</span>
+            </label>
+
+            <input
+              type="text"
+              id="background-color"
+              name="backgroundColor"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="notes">
+              Catatan Tambahan Konsep
+              <span class="text-muted">(opsional)</span>
+            </label>
+
+            <textarea
+              id="notes"
+              name="notes"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn--primary brief__submit"
+          >
+            Kirim Brief via WhatsApp →
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================== -->
+    <section class="section how-it-works" id="how-it-works">
+      <div class="container">
+
+        <span class="eyebrow">How It Works</span>
+
+        <h2 class="section-title">
+          Dari brief sederhana,
+          <span class="text-gold">
+            menjadi identitas yang siap digunakan.
+          </span>
+        </h2>
+
+        <p class="section-copy">
+          Kamu ceritakan kebutuhan bisnismu. Borneo membantu
+          menerjemahkannya menjadi identitas visual yang sesuai dengan
+          karakter brand.
+        </p>
+
+        <div class="process">
+          <article class="process__item">
+            <span class="process__number">01</span>
+            <h3>Pilih Referensi &amp; Paket</h3>
+            <p>
+              Temukan gaya yang kamu suka dari portfolio lalu pilih paket
+              yang sesuai kebutuhan.
+            </p>
+          </article>
+
+          <article class="process__item">
+            <span class="process__number">02</span>
+            <h3>Isi Brief</h3>
+            <p>
+              Ceritakan bisnis, konsep, warna, dan kebutuhan desainmu.
+            </p>
+          </article>
+
+          <article class="process__item">
+            <span class="process__number">03</span>
+            <h3>Proses Desain</h3>
+            <p>
+              Brief dipelajari lalu konsep dikembangkan sesuai karakter
+              bisnis.
+            </p>
+          </article>
+
+          <article class="process__item">
+            <span class="process__number">04</span>
+            <h3>Finalisasi</h3>
+            <p>
+              Setelah desain disetujui, file final disiapkan sesuai paket.
+            </p>
+          </article>
+        </div>
+
+        <div class="process__note">
+          <strong>Nggak perlu paham istilah desain.</strong>
+          <span>
+            Ceritakan bisnismu dengan cara yang paling mudah — sisanya
+            biarkan kami bantu arahkan.
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         WHY BORNEO
+    ========================== -->
+    <section class="section section--soft why-borneo" id="why-borneo">
+      <div class="container">
+
+        <span class="eyebrow">Why Borneo</span>
+
+        <h2 class="section-title">
+          Bukan sekadar terlihat bagus.
+          <span class="text-gold">
+            Harus terasa tepat untuk bisnismu.
+          </span>
+        </h2>
+
+        <p class="section-copy">
+          Logo untuk coffee shop tentu tidak harus berbicara dengan bahasa
+          visual yang sama seperti perusahaan konstruksi. Karena itu, setiap
+          konsep dimulai dari memahami karakter bisnisnya terlebih dahulu.
+        </p>
+
+        <div class="why-borneo__grid">
+
+          <article>
+            <span>01</span>
+            <h3>Desain Mengikuti Bisnis, Bukan Sebaliknya</h3>
+            <p>
+              Gaya visual disesuaikan dengan karakter dan kebutuhan bisnis,
+              bukan dipaksakan mengikuti satu gaya tertentu.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Berdasarkan Brief</h3>
+            <p>
+              Setiap konsep dikembangkan dari kebutuhan bisnis, bukan
+              sekadar mengganti nama pada desain template.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Nggak Harus Paham Desain</h3>
+            <p>
+              Kamu bisa membawa referensi atau menyerahkan arah visual
+              kepada designer.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Siap Digunakan</h3>
+            <p>
+              File final disiapkan sesuai paket agar siap digunakan untuk
+              kebutuhan bisnis.
+            </p>
+          </article>
+
+        </div>
+
+        <blockquote class="why-borneo__statement">
+          Kami tidak mencari logo yang cocok untuk semua bisnis.
+          <strong>Kami mencari logo yang cocok untuk bisnismu.</strong>
+        </blockquote>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         TESTIMONIALS
+    ========================== -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+
+        <span class="eyebrow">Client Stories</span>
+
+        <h2 class="section-title">
+          Cerita dari mereka yang
+          <span class="text-gold">pernah bekerja bersama kami.</span>
+        </h2>
+
+        <div class="testimonials__grid" id="testimonials-grid">
+          <!-- Testimonial asli ditambahkan nanti -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         FAQ
+    ========================== -->
+    <section class="section section--soft faq" id="faq">
+      <div class="container">
+
+        <span class="eyebrow">Frequently Asked Questions</span>
+
+        <h2 class="section-title">
+          Masih ada yang ingin kamu
+          <span class="text-gold">pastikan?</span>
+        </h2>
+
+        <p class="section-copy">
+          Beberapa hal yang paling sering ditanyakan sebelum memulai project
+          bersama Borneo Graphicidea.
+        </p>
+
+        <div class="faq__list">
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>01</span>
+              <strong>Saya belum tahu mau logo seperti apa. Bisa dibantu?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Bisa. Kamu nggak perlu memahami istilah desain. Ceritakan
+                bisnis, karakter, dan kebutuhanmu, atau pilih opsi Bebas
+                Rekomendasi Designer di brief.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>02</span>
+              <strong>Apakah saya bisa memberikan contoh logo yang saya suka?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Bisa. Referensi digunakan untuk memahami arah visual yang kamu
+                sukai, bukan untuk menyalin desain brand lain.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>03</span>
+              <strong>Berapa lama proses desain logo?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Paket Basic sekitar 3 hari dan Standard sekitar 2–3 hari.
+                Premium atau project perusahaan menyesuaikan kompleksitas
+                project, brief, dan proses revisi.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>04</span>
+              <strong>Bagaimana kalau konsep pertama belum cocok?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Kamu dapat memberikan feedback dan penyesuaian dilakukan
+                sesuai ketentuan revisi pada paket yang dipilih.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>05</span>
+              <strong>Apa bedanya konsep dan revisi?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Konsep adalah alternatif arah desain berdasarkan brief.
+                Revisi minor adalah penyesuaian terhadap konsep yang sudah
+                dibuat, seperti warna, tulisan, proporsi, atau detail tertentu,
+                bukan pembuatan konsep baru dari awal.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>06</span>
+              <strong>File apa saja yang saya dapatkan?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Setiap paket mendapatkan file final resolusi tinggi untuk
+                penggunaan umum. File master/editable dan Brand Guideline
+                tersedia pada paket tertentu.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>07</span>
+              <strong>Apakah desain menjadi milik saya setelah project selesai?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Ya. Setelah project selesai dan pembayaran telah dilunasi,
+                desain final yang telah disetujui menjadi milik client dan
+                bebas digunakan untuk kebutuhan bisnis maupun kebutuhan
+                lainnya. Client juga bebas melakukan pengeditan atau
+                modifikasi terhadap desain tersebut di kemudian hari.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button type="button" class="faq__question">
+              <span>08</span>
+              <strong>Bagaimana cara memulai?</strong>
+              <span class="faq__icon">+</span>
+            </button>
+
+            <div class="faq__answer">
+              <p>
+                Mulai dari portfolio, pilih paket yang sesuai, isi brief,
+                lalu kirim langsung melalui WhatsApp.
+              </p>
+
+              <a href="#portfolio" class="faq__link">
+                Lihat Portfolio →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         FINAL CTA
+    ========================== -->
+    <section class="section final-cta">
+      <div class="container final-cta__inner">
+
+        <span class="eyebrow">Let's Build Your Brand</span>
+
+        <h2 class="final-cta__title">
+          Bisnismu sudah siap berkembang.
+          <span class="text-gold">
+            Sekarang, bagaimana ia ingin dikenal?
+          </span>
+        </h2>
+
+        <p>
+          Mulai dari brief sederhana. Ceritakan bisnismu, pilih kebutuhan
+          desainmu, dan biarkan kami membantu menerjemahkannya menjadi
+          identitas yang tepat.
+        </p>
+
+        <div class="final-cta__actions">
+          <button
+            type="button"
+            class="btn btn--primary"
+            data-start-project
+          >
+            Mulai Project Saya →
+          </button>
+
+          <a href="#portfolio" class="btn btn--secondary">
+            Lihat Portfolio ↑
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <img
+          src="assets/images/brand/logo-borneo-white.png"
+          alt="Borneo Graphicidea"
+        />
+
+        <p>
+          Logo &amp; Brand Identity Design Studio
+        </p>
+      </div>
+
+      <div class="footer__column">
+        <h3>Navigation</h3>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#how-it-works">Cara Kerja</a>
+        <a href="#why-borneo">Why Borneo</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer__column">
+        <h3>Services</h3>
+        <span>Logo Design</span>
+        <span>Brand Identity</span>
+        <span>Corporate Identity</span>
+      </div>
+
+      <div class="footer__column">
+        <h3>Connect</h3>
+        <a href="#" data-whatsapp-link>WhatsApp</a>
+        <a href="#" data-instagram-link>Instagram</a>
+        <a href="#" data-facebook-link>Facebook</a>
+      </div>
+
+    </div>
+
+    <div class="container footer__bottom">
+      <span>
+        © 2026 Borneo Graphicidea. All rights reserved.
+      </span>
+
+      <div>
+        <a href="#" data-terms-link>Syarat &amp; Ketentuan</a>
+        <a href="#" data-privacy-link>Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================
+       MODAL ROOT
+  ========================== -->
+  <div id="modal-root"></div>
+
+
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================== -->
+  <button
+    type="button"
+    class="floating-whatsapp"
+    aria-label="Hubungi Borneo Graphicidea melalui WhatsApp"
+    data-floating-whatsapp
+  >
+    WA
+  </button>
+
+
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
+  <script src="js/tracking.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/order.js" defer></script>
+  <script src="js/whatsapp.js" defer></script>
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>

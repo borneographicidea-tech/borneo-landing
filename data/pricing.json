@@ -1,0 +1,73 @@
+{
+  "regular": [
+    {
+      "id": "basic",
+      "name": "Basic",
+      "price": 150000,
+      "priceLabel": "Rp150.000",
+      "description": "Untuk usaha baru yang membutuhkan logo profesional.",
+      "recommended": false,
+      "features": [
+        "2 Konsep Desain",
+        "2x Revisi Minor",
+        "File PNG Transparan",
+        "File JPG",
+        "File PDF",
+        "Resolusi Tinggi",
+        "Estimasi ±3 Hari"
+      ]
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "price": 350000,
+      "priceLabel": "Rp350.000",
+      "description": "Untuk bisnis yang ingin identitas lebih siap digunakan.",
+      "recommended": true,
+      "badge": "Direkomendasikan",
+      "features": [
+        "3 Konsep Terarah",
+        "3x Revisi Minor",
+        "Semua File Paket Basic",
+        "File Master / Editable CDR",
+        "Mini Brand Guide",
+        "3 Branding Mockups",
+        "Estimasi ±2–3 Hari"
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "price": 750000,
+      "priceLabel": "Rp750.000",
+      "description": "Untuk brand yang membutuhkan identitas visual lebih lengkap.",
+      "recommended": false,
+      "features": [
+        "4 Konsep Terarah",
+        "Revisi Lebih Fleksibel",
+        "Semua File Paket Standard",
+        "File Master / Editable",
+        "Full Brand Guideline",
+        "5 Branding Mockups",
+        "Priority Handling"
+      ]
+    }
+  ],
+
+  "company": {
+    "id": "corporate",
+    "name": "Corporate Identity",
+    "price": 750000,
+    "priceLabel": "Mulai Rp750.000",
+    "description": "Untuk perusahaan yang membutuhkan identitas visual profesional dan disesuaikan dengan kebutuhan bisnis.",
+    "recommended": false,
+    "features": [
+      "Konsep Identitas Terarah",
+      "Logo Utama & Variasi Logo",
+      "File Master / Editable",
+      "Panduan Identitas Visual",
+      "Branding Mockups",
+      "Kebutuhan Corporate Disesuaikan dengan Project"
+    ]
+  }
+}

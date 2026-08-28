@@ -324,3 +324,34 @@
     height: 38px;
   }
 }
+/* =========================
+   BRIEF
+========================= */
+
+@media (max-width: 768px) {
+
+  .brief-summary__content {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .brief__summary:not(:empty) {
+    padding: 20px;
+  }
+
+  .concept-options {
+    gap: 8px;
+  }
+
+  .concept-options span {
+    min-height: 40px;
+    padding-inline: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing__payment-note {
+    width: 100%;
+    margin-top: 28px;
+    padding: 16px;
+  }
+}

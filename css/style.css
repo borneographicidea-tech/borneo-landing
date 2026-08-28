@@ -928,3 +928,362 @@ padding: 70px 28px;
 
   transform: rotate(90deg);
 }
+/* =========================
+   PRICING
+========================= */
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+
+  margin-top: 52px;
+}
+
+.pricing-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 34px 30px;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    background var(--transition-base);
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-gold);
+}
+
+.pricing-card.is-recommended {
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: 0;
+  right: 28px;
+
+  transform: translateY(-50%);
+
+  padding: 7px 13px;
+
+  border-radius: var(--radius-pill);
+
+  background: var(--color-gold);
+  color: var(--color-bg);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pricing-card__name {
+  color: var(--color-gold);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.pricing-card__price {
+  margin-top: 14px;
+
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.pricing-card__description {
+  min-height: 78px;
+  margin-top: 18px;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.pricing-card__features {
+  display: grid;
+  gap: 14px;
+
+  margin-top: 28px;
+  padding-top: 26px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.pricing-card__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+
+  color: var(--color-text-soft);
+
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.pricing-card__check {
+  flex-shrink: 0;
+
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.pricing-card__cta {
+  width: 100%;
+
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.pricing-card__features + .pricing-card__cta {
+  margin-top: 32px;
+}
+
+.pricing-card--company {
+  grid-column: 1 / -1;
+
+  width: min(720px, 100%);
+  margin-inline: auto;
+}
+
+.pricing__error {
+  color: var(--color-text-muted);
+}
+.pricing__payment-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  width: fit-content;
+  max-width: 680px;
+
+  margin: 34px auto 0;
+  padding: 18px 22px;
+
+  background: rgba(198, 166, 106, 0.045);
+  border: 1px solid var(--color-border-gold);
+  border-radius: var(--radius-md);
+}
+
+.pricing__payment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid var(--color-border-gold);
+  border-radius: 50%;
+
+  color: var(--color-gold);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pricing__payment-note strong {
+  display: block;
+
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.pricing__payment-note p {
+  margin-top: 4px;
+
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+/* =========================
+   BRIEF
+========================= */
+
+.brief .container {
+  max-width: 920px;
+}
+
+.brief__header {
+  max-width: 760px;
+}
+
+.brief__form {
+  margin-top: 52px;
+}
+
+.brief__summary:not(:empty) {
+  margin-bottom: 38px;
+  padding: 24px 26px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(198, 166, 106, 0.08),
+      rgba(198, 166, 106, 0.02)
+    );
+
+  border: 1px solid var(--color-border-gold);
+  border-radius: var(--radius-md);
+}
+
+.brief-summary__content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.brief-summary__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.brief-summary__item span {
+  color: var(--color-text-muted);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brief-summary__item strong {
+  color: var(--color-text);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* FORM */
+
+.form-group {
+  margin-top: 28px;
+}
+
+fieldset.form-group {
+  padding: 0;
+  border: 0;
+}
+
+.form-group label,
+.form-group legend {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--color-text-soft);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+
+  padding: 15px 16px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  outline: none;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  border-color: var(--color-gold);
+  background: #101010;
+}
+
+/* CONCEPT SELECTOR */
+
+.concept-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.concept-options label {
+  position: relative;
+
+  margin: 0;
+
+  cursor: pointer;
+}
+
+.concept-options input {
+  position: absolute;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.concept-options span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 0 16px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+
+  color: var(--color-text-soft);
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.concept-options label:hover span {
+  border-color: var(--color-border-gold);
+}
+
+.concept-options input:checked + span {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-bg);
+}
+
+.brief__submit {
+  width: 100%;
+
+  margin-top: 36px;
+
+  min-height: 56px;
+}

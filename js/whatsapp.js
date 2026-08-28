@@ -123,6 +123,27 @@ if (!orderState.packageId) {
       `https://wa.me/${settings.whatsappNumber}` +
       `?text=${encodeURIComponent(message)}`;
 
+      window.BorneoTracking?.track?.(
+  "complete_brief",
+  {
+    portfolio: orderState.portfolio || null,
+    category: orderState.category || null,
+    packageId: orderState.packageId || null,
+    packageName: orderState.packageName || null
+  }
+);
+
+window.BorneoTracking?.track?.(
+  "whatsapp_click",
+  {
+    source: "brief_form",
+    portfolio: orderState.portfolio || null,
+    category: orderState.category || null,
+    packageId: orderState.packageId || null,
+    packageName: orderState.packageName || null
+  }
+);
+
     window.open(
       whatsappUrl,
       "_blank",

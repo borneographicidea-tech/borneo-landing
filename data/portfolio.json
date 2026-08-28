@@ -1,0 +1,74 @@
+[
+  {
+    "id": "kulinara",
+    "name": "Kulinara",
+    "category": "fnb",
+    "categoryLabel": "F&B",
+    "descriptor": "Logo & Brand Identity",
+    "image": "assets/images/portfolio/fnb/kulinara.jpg",
+    "cta": "Buat Logo Seperti Ini →"
+  },
+  {
+    "id": "bimasena",
+    "name": "Bimasena",
+    "category": "fnb",
+    "categoryLabel": "F&B",
+    "descriptor": "Logo & Brand Identity",
+    "image": "assets/images/portfolio/fnb/bimasena.jpg",
+    "cta": "Buat Logo Seperti Ini →"
+  },
+  {
+    "id": "mafia-jajan",
+    "name": "Mafia Jajan",
+    "category": "umkm",
+    "categoryLabel": "UMKM",
+    "descriptor": "Logo & Brand Identity",
+    "image": "assets/images/portfolio/umkm/mafia-jajan.jpg",
+    "cta": "Buat Logo Seperti Ini →"
+  },
+  {
+    "id": "bersihku",
+    "name": "BersihKu",
+    "category": "umkm",
+    "categoryLabel": "UMKM",
+    "descriptor": "Logo & Brand Identity",
+    "image": "assets/images/portfolio/umkm/bersihku.jpg",
+    "cta": "Buat Logo Seperti Ini →"
+  },
+  {
+    "id": "eureka",
+    "name": "Eureka",
+    "category": "perusahaan",
+    "categoryLabel": "Perusahaan",
+    "descriptor": "Corporate Identity",
+    "image": "assets/images/portfolio/perusahaan/eureka.jpg",
+    "cta": "Mulai Project Perusahaan →"
+  },
+  {
+    "id": "apex-sinergi",
+    "name": "Apex Sinergi",
+    "category": "perusahaan",
+    "categoryLabel": "Perusahaan",
+    "descriptor": "Corporate Identity",
+    "image": "assets/images/portfolio/perusahaan/apex-sinergi.jpg",
+    "cta": "Mulai Project Perusahaan →"
+  },
+  {
+    "id": "ddt",
+    "name": "DDT",
+    "category": "umum",
+    "categoryLabel": "Umum",
+    "descriptor": "Logo & Brand Identity",
+    "image": "assets/images/portfolio/umum/ddt.jpg",
+    "cta": "Buat Logo Seperti Ini →"
+  },
+  {
+    "id": "ds-rent-car",
+    "name": "DS Rent Car",
+    "category": "umum",
+    "categoryLabel": "Umum",
+    "descriptor": "Logo & Brand Identity",
+    "image": "assets/images/portfolio/umum/ds-rent-car.jpg",
+    "cta": "Buat Logo Seperti Ini →"
+  }
+]

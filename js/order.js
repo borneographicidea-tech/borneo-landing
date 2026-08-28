@@ -157,6 +157,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================
 
   window.BorneoOrder = {
-    getState: () => ({ ...orderState })
-  };
+  getState: () => ({ ...orderState }),
+
+  setCategory: (category) => {
+    orderState.portfolio = null;
+    orderState.category = category || null;
+
+    orderState.packageId = null;
+    orderState.packageName = null;
+    orderState.packagePrice = null;
+
+    updateBriefSummary();
+  }
+};
 });

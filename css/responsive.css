@@ -417,3 +417,93 @@
     margin-top: 40px;
   }
 }
+/* =========================
+   FAQ
+========================= */
+
+@media (max-width: 768px) {
+
+  .faq__list {
+    margin-top: 42px;
+  }
+
+  .faq__question {
+    grid-template-columns: 34px 1fr 26px;
+    gap: 10px;
+
+    padding: 21px 0;
+  }
+
+  .faq__question strong {
+    font-size: 0.9rem;
+  }
+
+  .faq__answer-inner p {
+    margin-left: 44px;
+    padding-bottom: 22px;
+  }
+
+  .faq__link {
+    margin-left: 44px;
+  }
+}
+/* =========================
+   PROJECT SELECTOR
+========================= */
+
+@media (max-width: 600px) {
+
+  .project-selector__panel {
+    padding: 32px 20px 20px;
+  }
+
+  .project-selector__options {
+    grid-template-columns: 1fr;
+  }
+
+  .project-selector__options button {
+    min-height: 110px;
+  }
+
+  .project-selector__options strong {
+    margin-top: 18px;
+  }
+}
+/* =========================
+   FOOTER
+========================= */
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding-top: 56px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

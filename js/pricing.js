@@ -88,10 +88,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         </ul>
 
         <button
-          type="button"
-          class="btn btn--primary pricing-card__cta"
-          data-select-package="${item.id}"
-        >
+  type="button"
+  class="btn btn--primary pricing-card__cta"
+  data-package-select
+  data-select-package="${item.id}"
+  data-package-id="${item.id}"
+  data-package-name="${item.name}"
+  data-package-price="${item.price}"
+>
           Pilih Paket →
         </button>
 

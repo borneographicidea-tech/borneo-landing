@@ -97,16 +97,19 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (packageButton) {
-      trackEvent("select_package", {
-        packageId:
-          packageButton.dataset.packageSelect || null,
+  trackEvent("select_package", {
+    packageId:
+      packageButton.dataset.packageId || null,
 
-        packageName:
-          packageButton.dataset.packageName || null
-      });
+    packageName:
+      packageButton.dataset.packageName || null,
 
-      return;
-    }
+    packagePrice:
+      packageButton.dataset.packagePrice || null
+  });
+
+  return;
+}
 
     const startProjectButton =
       event.target.closest(

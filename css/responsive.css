@@ -100,7 +100,29 @@
   .navbar__toggle.is-active span:last-child {
     transform: translateY(-4px) rotate(-45deg);
   }
+
+  /* =========================
+   TESTIMONIALS - MOBILE
+========================= */
+
+.testimonials__grid { 
+  grid-template-columns: 1fr; 
+  gap: 18px; 
+  margin-top: 36px; 
+} 
+
+.testimonial-card--last { 
+  grid-column: auto; 
+  width: 100%; 
+} 
+
+.testimonials__intro { 
+  margin-top: 16px; 
 }
+}
+
+
+
 /* =========================
    HERO
 ========================= */
